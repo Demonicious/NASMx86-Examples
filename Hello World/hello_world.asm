@@ -1,4 +1,10 @@
+; The Global Directive is used to export the symbols where it points in your generated object code.
+; The linker requires the "_main" label but its used in a Local space, therefore we have to set it as
+; global for the linker to know where it is.
 global _main
+
+; The Extern directive is used to specify the symbols that are used in the current file, but their
+; definitions are present in some other file where it has been specified as "global"
 extern _printf
 
 ; Assembly programs can be divided into 3 Sections:
