@@ -17,6 +17,10 @@ extern _printf
 
 ; Only 2 Sections are used in this program.
 
+; The Section that wasn't used in this program is the bss section. tl;dr Its used for un-intialized data.
+; Which means that its the data that is changed at runtime.
+; Does that ring a bell ? Yup, Variables.
+
 ; The data section is used for initialization of constants.
 ; These values do not change at runtime.
 
