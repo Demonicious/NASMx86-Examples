@@ -1,2 +1,3 @@
-# x86-Assembly
-Just a repository that holds all of the x86 Assembly code I've written out of curiosity, and interest to see things work.
+# x86 Assembly is Cool.
+
+Just a few examples of how things work in x86 Assembly. All the things I wrote while discovering and learning things about the language out of curiosity and interest.
