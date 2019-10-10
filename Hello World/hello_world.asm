@@ -25,7 +25,11 @@ extern _printf
 ; These values do not change at runtime.
 
 section .data
-    message: db "Hello World!", 10, 0
+    message: db "Hello World!", 10, 0 ; db stands for "byte" Its used for specifying the size of this memory location.
+                                      ; The 10 after the comma means "\n" or new line character. It is used to insert
+                                      ; a new line in the console.
+                                      ; Sometimes you might see the 10 written as 0xA (which in Hex is the equiavelent of 10)
+                                      ; The 0 at the end tells the computer when to stop.
 
 ; The text section contains all of the instructions that
 ; are to be executed by the Processor.
