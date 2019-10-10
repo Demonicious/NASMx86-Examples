@@ -1,4 +1,6 @@
-# x86 Assembly is Cool.
+### Sometimes you just wake up and feel like.. "Man I really wanna try writing some Assembly today"
+
+Don't worry, you're never alone!
 
 Just a few examples of how things work in x86 Assembly. All the things I wrote while discovering and learning things about the language out of curiosity and interest.
 
