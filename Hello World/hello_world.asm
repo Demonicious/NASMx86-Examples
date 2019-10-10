@@ -33,11 +33,21 @@ section .data
 
 section .text
     _main:
+        push ebp
+        mov ebp, esp
+        
         push message
         call _printf
-        add esp, 4
-        ret
         
+        mov esp, ebp
+        pop ebp
+        ret
+
+; the _main "function" above is literally the full equivalent of this C main function.
+; void main() {
+;   printf("Hello World!");
+; }
+
 ; As you can see from this code, This is actually pretty similar to a C Program.
 ; Where you have the directives at the top, then your constants and variables, and then a main function
 ; which actually executes the instructions.
