@@ -39,5 +39,5 @@ section .text
         ret
         
 ; As you can see from this code, This is actually pretty similar to a C Program.
-; Where you have the directives at the top, then constants, then variables, and then a main function
+; Where you have the directives at the top, then your constants and variables, and then a main function
 ; which actually executes the instructions.
