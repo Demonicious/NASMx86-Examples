@@ -7,7 +7,7 @@ extern _scanf, _printf
 
 section .data
     input_scan_format: db "%d",0
-    input_control_string: db "Please Enter a Number: ", 10, 0
+    input_control_string: db "Please Enter a Number: ", 0
     
     result_control_string: db "Your Input is: %d", 10, 0
    
