@@ -24,6 +24,8 @@ section .text
         
         ; printf(controlString, number);
         push DWORD [number] ; Surrounding "number" with "[]" tells NASM that we're pushing the Value of "number", not the Memory Address.
+                            ; the DWORD infront of our number is used to Specify the size. Without it NASM will give you an error
+                            ; telling you to specify the size.
         push controlString  ; Unlike C, We're theoretically specifying the values before the control string.
         call _printf        ; But unlike C aswell, these values are being pushed directly onto the Stack.
                             ; And in stacks, things that are added later are on top. These instructions would be executed as such:
