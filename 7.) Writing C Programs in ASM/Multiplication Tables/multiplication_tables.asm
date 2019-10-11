@@ -1,5 +1,5 @@
 global _main
-extern _printf, _scanf
+extern _printf, _scanf, _getch
 
 section .data
     scan_prompt: db "Please Enter a Number to Print the Table of: ", 0
@@ -43,6 +43,8 @@ section .text
             
             cmp esi, [timesToMultiply]
             jne _loop
+        
+        call _getch
         
         mov esp, ebp
         pop ebp
