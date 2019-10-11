@@ -10,5 +10,7 @@ void main() {
     printf("%d x %d = %d", number, i, (number * i));
   }
   
+  printf("Finished Execution");
+  
   getch();
 }
